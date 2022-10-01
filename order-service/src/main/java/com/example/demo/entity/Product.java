@@ -20,7 +20,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "lumen_products_2022")
+@Table(name = "lumen_product_2022")
 public class Product {
 	@Id
 	@Column(name = "product_id")

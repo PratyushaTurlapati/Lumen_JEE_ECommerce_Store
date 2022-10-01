@@ -20,7 +20,7 @@ background-color:beige;
 	<br>
 	<br>
 	<p style="color: green"><b>${message}</b></p>
-	<form:form method="post" modelAttribute="order" action="saveorder" >
+	<form:form method="post" modelAttribute="order" action="saveorders" >
 		
 		<div class="btn-group-vertical" style="text-align:center">
 		<br>
@@ -32,10 +32,10 @@ background-color:beige;
 			<form:input path="productId" class="form-control" id="productId" required="required"/>
 
 			<label>user Name</label>
-			<form:input path="orderName" class="form-control" id="orderName" />
+			<form:input path="customerName" class="form-control" id="customerName" />
 	
 			<label>Order Date</label>
-			<form:input path="orderPrice" class="form-control" id="orderPrice" />
+			<form:input path="date" class="form-control" id="date" />
 
 			
 		</div>

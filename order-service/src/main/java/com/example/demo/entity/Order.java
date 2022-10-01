@@ -24,7 +24,7 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "lumen_orders_2022")
+@Table(name = "lumen_order_2022")
 public class Order {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
