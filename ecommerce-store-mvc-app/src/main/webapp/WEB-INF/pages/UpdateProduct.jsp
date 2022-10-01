@@ -33,7 +33,7 @@
 		</div>
 		<div class="form-group">
 			<input type="submit" value="Update">
-			<button onclick="window.location.href='/product-home-page'" class="btn btn-danger">Product Home page</button>
+			
 			
 		</div>
 	</form:form>

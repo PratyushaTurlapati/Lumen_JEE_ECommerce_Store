@@ -21,18 +21,6 @@ public class OrderServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OrderServiceApplication.class, args);
 	}
-//	@Bean
-//	public CommandLineRunner runner() {
-//		return new CommandLineRunner() {
-//			@Autowired
-//			OrderRepository repo;
-//			
-//			@Override
-//			public void run(String... args) throws Exception {
-//				repo.save(new Order(0, "", LocalDate.of(),new Product(0)));
-//				
-//			}
-//		};
-//	}
+
 
 }

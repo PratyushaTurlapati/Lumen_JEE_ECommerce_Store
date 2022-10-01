@@ -9,8 +9,11 @@
 <title>Products</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
 <style type="text/css">
-table, tr, td, th {
-	border: 2px solid blue;
+body{
+	background-color:beige;
+}
+table, tr, td, th,h3 {
+	border: 2px solid green;
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse: collapse;
@@ -18,7 +21,13 @@ table, tr, td, th {
 </style>
 </head>
 <body>
-
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3 style="text-align:center;"><b>List Of Products<b></b></h3>
+	<br>
+	<br>
 	<div>
 
 		<table>

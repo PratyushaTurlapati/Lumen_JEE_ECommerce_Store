@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Add Product</title>
+<title>Add Order</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
 <style type="text/css">
 form-group{
@@ -16,29 +16,28 @@ background-color:beige;
 <body  class="form-group"style="text-align:center;background-color:beige;" >
 <br>
 <br>
-<h3 style="text-align:center;"><b>Add the Product Details</b></h3>
+<h3 style="text-align:center;"><b>Add the Order Details</b></h3>
 	<br>
 	<br>
 	<p style="color: green"><b>${message}</b></p>
-	<form:form method="post" modelAttribute="product" action="save" >
+	<form:form method="post" modelAttribute="order" action="saveorder" >
 		
 		<div class="btn-group-vertical" style="text-align:center">
 		<br>
 		
+			<label>Order Id</label>
+			<form:input path="orderId" class="form-control" id="orderId" required="required"/>
+			
 			<label>Product Id</label>
 			<form:input path="productId" class="form-control" id="productId" required="required"/>
 
-			<label>Product Name</label>
-			<form:input path="productName" class="form-control" id="productName" />
+			<label>user Name</label>
+			<form:input path="orderName" class="form-control" id="orderName" />
 	
-			<label>Product Price</label>
-			<form:input path="productPrice" class="form-control" id="productPrice" />
+			<label>Order Date</label>
+			<form:input path="orderPrice" class="form-control" id="orderPrice" />
 
-			<label>Product Inventory</label>
-			<form:input path="productInventory" class="form-control" id="productInventory" />
-		
-			<label>Product Merchant</label>
-			<form:input path="productMerchant" class="form-control" id="productMerchant" />
+			
 		</div>
 		<br>
 		<div class="form-group">

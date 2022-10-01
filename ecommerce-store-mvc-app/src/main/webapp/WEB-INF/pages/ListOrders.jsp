@@ -10,8 +10,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
 
 <style type="text/css">
-table, tr, td, th {
-	border: 2px solid blue;
+
+body{
+	background-color:beige;
+}
+table, tr, td, th,h3 {
+	border: 2px solid green;
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse: collapse;
@@ -43,10 +47,12 @@ table, tr, td, th {
 		</table>
 	</div>
 	<br> <br>
-<div style="text-align: center;">
-	<button onclick="window.location.href='/order-home-page'"
-			class="btn btn-danger">Order Home page</button>
-</div>
+	<div style="text-align: center;">
+			
+			<button onclick="history.back()">Go Back To Home</button>
+	</div>
+	
+
 
 </body>
 </html>
