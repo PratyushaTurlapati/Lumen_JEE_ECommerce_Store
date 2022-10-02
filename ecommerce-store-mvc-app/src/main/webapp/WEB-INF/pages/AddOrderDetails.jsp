@@ -25,9 +25,6 @@ background-color:beige;
 		<div class="btn-group-vertical" style="text-align:center">
 		<br>
 		
-			<label>Order Id</label>
-			<form:input path="orderId" class="form-control" id="orderId" required="required"/>
-			
 			
 		
 			
