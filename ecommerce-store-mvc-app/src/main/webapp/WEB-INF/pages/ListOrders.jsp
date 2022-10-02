@@ -29,18 +29,19 @@ table, tr, td, th,h3 {
 			<thead>
 				<tr>
 					<th>Order Id</th>
-					<th>User</th>
-					<th>Order Date</th>
-					<th>Product</th>
+					<th>Product Id</th>
+					<th>Product Quantity</th>
+					<th>User Name</th>
+					
 				</tr>
 			</thead>
 			<tbody>
 				<c:forEach items="${list}" var="eachOrder">
 					<tr>
 						<td>${eachOrder.orderId}</td>
+						<td>${eachOrder.productId}</td>
+						<td>${eachOrder.quantity}</td>
 						<td>${eachOrder.user}</td>
-						<td>${eachOrder.orderDate}</td>
-						<td>${eachOrder.product}</td>
 					</tr>
 				</c:forEach>
 			</tbody>

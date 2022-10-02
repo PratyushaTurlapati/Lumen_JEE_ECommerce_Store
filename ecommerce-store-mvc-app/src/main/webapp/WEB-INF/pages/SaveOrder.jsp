@@ -16,7 +16,7 @@ font-size:20px;
 <body>
 
 <h1 style="text-align:center;color:#4CAF50">Add Order</h1>
-<form action="" method="post">
+<form action="/saveorderss" method="post">
    
    <div Class="form-group">
    <label for="id">order Id:</label>

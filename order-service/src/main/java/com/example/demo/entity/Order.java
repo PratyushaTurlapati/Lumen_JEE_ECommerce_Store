@@ -24,19 +24,20 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "lumen_order_2022")
+@Table(name = "lumen_userorder_2022")
 public class Order {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "order_id")
 	int orderId;
+	@Column(name = "productId")
+	private int productId;
+//	@Column(name="userName")
 	String user;
-	@Column(name = "order_date")
-	@DateTimeFormat(iso = ISO.DATE)
-	private LocalDate orderDate;
-	@OneToOne
-	@JoinColumn(name = "productId")
-	private Product product;
+	@Column(name="quantity")
+	private int quantity;
+
+	
 
 
 }

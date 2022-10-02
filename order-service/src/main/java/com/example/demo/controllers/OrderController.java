@@ -1,6 +1,8 @@
 package com.example.demo.controllers;
 
 import java.util.List;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,6 +24,11 @@ private OrderService service;
 @GetMapping
 public List<Order> getAllproducts(){
 	return this.service.findAll();
+}
+@PostMapping("/addorder")  
+public ResponseEntity<Order> add(@RequestBody Order order) {
+	Order newOrder = this.service.save(order);
+	return ResponseEntity.ok().body(null);
 }
 @PostMapping(path = "/byUser")
 public List<Order> findOrderByUsers(@RequestBody String user){

@@ -19,13 +19,8 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Order {
-	private int id;
-	private String customerName;
+	private int orderId;
+	private String user;
 	private int productId;
-	private LocalDate date;
 	private int quantity;
-	public int getOrderId() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 }

@@ -29,7 +29,7 @@ public class OrderServiceApplication {
 //			
 //			@Override
 //			public void run(String... args) throws Exception {
-//				repo.save(new Order(0, "", LocalDate.of(),new Product(0)));
+//				repo.saveAll(new Order(0, "", LocalDate.of(),new Product(0)));
 //				
 //			}
 //		};

@@ -123,20 +123,23 @@ public class ProductAndOrderServiceController {
 	// ------------------------Order Service Controller-----------------------------
 
 	
-	@RequestMapping(path = "/saveorder", method = RequestMethod.GET)
+	@RequestMapping(path = "/savetheorder", method = RequestMethod.GET)
 	public String initAddOrderPage(Model model) {
 		model.addAttribute("order", new Order());
 		return "AddOrderDetails";
 	}
 
-	@RequestMapping(path = "/saveorder", method = RequestMethod.POST)
+	@RequestMapping(path = "/savetheorder", method = RequestMethod.POST)
 	public String addOrder(@ModelAttribute("order") Order order, Model model) {
 		HttpEntity<Order> request = new HttpEntity<>(order);
-		Order orderObject = this.template.postForObject("http://localhost:8080/api/orders/add", request,
+		Order orderObject = this.template.postForObject("http://localhost:8080/api/orders/addorder", request,
 				Order.class);
 		model.addAttribute("message", "One Order is Placed");
 		return "AddOrderDetails";
 	}
+	
+	
+	
 	
 	
 	

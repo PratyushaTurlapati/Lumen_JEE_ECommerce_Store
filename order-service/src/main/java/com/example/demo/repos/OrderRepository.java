@@ -10,4 +10,6 @@ import com.example.demo.exceptions.UserNotFoundException;
 
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 	public List<Order> findByUser(String user) throws UserNotFoundException;
+
+//	public List<Order> saveAll(Order order);
 }
