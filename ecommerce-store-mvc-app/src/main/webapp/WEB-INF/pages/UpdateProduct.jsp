@@ -8,34 +8,43 @@
 <title>Update Product</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
 </head>
-<body>
-	<p style="color: #00FF00">${message}</p>
-	<form:form method="post" modelAttribute="product" action="update">
-		<div class="form-group">
+<body  class="form-group"style="text-align:center;background-color:beige;" >
+<br>
+<br>
+<h3 style="text-align:center;"><b>Add the Product Details</b></h3>
+	<br>
+	<br>
+	<p style="color: green"><b>${message}</b></p>
+	<form:form method="put" modelAttribute="product" action="update" >
+		
+		<div class="btn-group-vertical" style="text-align:center">
+		<br>
+		
 			<label>Product Id</label>
 			<form:input path="productId" class="form-control" id="productId" required="required"/>
-		</div>
-		<div class="form-group">
+
 			<label>Product Name</label>
 			<form:input path="productName" class="form-control" id="productName" />
-		</div>
-		<div class="form-group">
+	
 			<label>Product Price</label>
 			<form:input path="productPrice" class="form-control" id="productPrice" />
-		</div>
-		<div class="form-group">
+
 			<label>Product Inventory</label>
 			<form:input path="productInventory" class="form-control" id="productInventory" />
-		</div>
-		<div class="form-group">
+		
 			<label>Product Merchant</label>
 			<form:input path="productMerchant" class="form-control" id="productMerchant" />
 		</div>
+		<br>
 		<div class="form-group">
 			<input type="submit" value="Update">
 			
 			
 		</div>
 	</form:form>
+	<div style="text-align: center;">
+			
+			<button onclick="history.back()">Go Back To Home</button>
+	</div>
 </body>
 </html>
